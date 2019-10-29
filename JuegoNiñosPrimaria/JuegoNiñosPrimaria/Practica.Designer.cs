@@ -40,25 +40,17 @@
             this.lblNumero1 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.lblOperacion = new System.Windows.Forms.Label();
-            this.ptbUp1 = new System.Windows.Forms.PictureBox();
             this.ptbUp2 = new System.Windows.Forms.PictureBox();
-            this.ptbUp3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ptbMaestria = new System.Windows.Forms.PictureBox();
-            this.ptbDown1 = new System.Windows.Forms.PictureBox();
             this.ptbDown2 = new System.Windows.Forms.PictureBox();
-            this.ptbDown3 = new System.Windows.Forms.PictureBox();
             this.btnIgualar = new System.Windows.Forms.Button();
             this.btnPrueba = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUp1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUp3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNumero2
@@ -71,7 +63,6 @@
             this.lblNumero2.Name = "lblNumero2";
             this.lblNumero2.Size = new System.Drawing.Size(118, 60);
             this.lblNumero2.TabIndex = 4;
-            this.lblNumero2.Text = "2";
             this.lblNumero2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNumero2.Click += new System.EventHandler(this.lblNumero2_Click);
             // 
@@ -116,6 +107,7 @@
             this.sumaToolStripMenuItem.Name = "sumaToolStripMenuItem";
             this.sumaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.sumaToolStripMenuItem.Text = "Suma ";
+            this.sumaToolStripMenuItem.Click += new System.EventHandler(this.sumaToolStripMenuItem_Click);
             // 
             // restaToolStripMenuItem
             // 
@@ -129,12 +121,14 @@
             this.multiplicaciónXToolStripMenuItem.Name = "multiplicaciónXToolStripMenuItem";
             this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.multiplicaciónXToolStripMenuItem.Text = "Multiplicación  ";
+            this.multiplicaciónXToolStripMenuItem.Click += new System.EventHandler(this.multiplicaciónXToolStripMenuItem_Click);
             // 
             // divisiónToolStripMenuItem
             // 
             this.divisiónToolStripMenuItem.Name = "divisiónToolStripMenuItem";
             this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.divisiónToolStripMenuItem.Text = "División  ";
+            this.divisiónToolStripMenuItem.Click += new System.EventHandler(this.divisiónToolStripMenuItem_Click);
             // 
             // lblNumero1
             // 
@@ -146,7 +140,6 @@
             this.lblNumero1.Name = "lblNumero1";
             this.lblNumero1.Size = new System.Drawing.Size(118, 60);
             this.lblNumero1.TabIndex = 6;
-            this.lblNumero1.Text = "1";
             this.lblNumero1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtResultado
@@ -166,48 +159,23 @@
             this.lblOperacion.BackColor = System.Drawing.Color.Transparent;
             this.lblOperacion.Font = new System.Drawing.Font("Segoe Print", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOperacion.ForeColor = System.Drawing.Color.OldLace;
-            this.lblOperacion.Location = new System.Drawing.Point(117, 89);
+            this.lblOperacion.Location = new System.Drawing.Point(117, 97);
             this.lblOperacion.Name = "lblOperacion";
             this.lblOperacion.Size = new System.Drawing.Size(108, 54);
             this.lblOperacion.TabIndex = 9;
-            this.lblOperacion.Text = "x";
             this.lblOperacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ptbUp1
-            // 
-            this.ptbUp1.BackColor = System.Drawing.Color.Transparent;
-            this.ptbUp1.Image = global::JuegoNiñosPrimaria.Properties.Resources.Up;
-            this.ptbUp1.Location = new System.Drawing.Point(60, 219);
-            this.ptbUp1.Name = "ptbUp1";
-            this.ptbUp1.Size = new System.Drawing.Size(63, 55);
-            this.ptbUp1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbUp1.TabIndex = 10;
-            this.ptbUp1.TabStop = false;
-            this.ptbUp1.Visible = false;
             // 
             // ptbUp2
             // 
             this.ptbUp2.BackColor = System.Drawing.Color.Transparent;
             this.ptbUp2.Image = global::JuegoNiñosPrimaria.Properties.Resources.Up;
-            this.ptbUp2.Location = new System.Drawing.Point(246, 219);
+            this.ptbUp2.Location = new System.Drawing.Point(274, 219);
             this.ptbUp2.Name = "ptbUp2";
             this.ptbUp2.Size = new System.Drawing.Size(63, 55);
             this.ptbUp2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbUp2.TabIndex = 11;
             this.ptbUp2.TabStop = false;
             this.ptbUp2.Visible = false;
-            // 
-            // ptbUp3
-            // 
-            this.ptbUp3.BackColor = System.Drawing.Color.Transparent;
-            this.ptbUp3.Image = global::JuegoNiñosPrimaria.Properties.Resources.Up;
-            this.ptbUp3.Location = new System.Drawing.Point(426, 219);
-            this.ptbUp3.Name = "ptbUp3";
-            this.ptbUp3.Size = new System.Drawing.Size(63, 55);
-            this.ptbUp3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbUp3.TabIndex = 12;
-            this.ptbUp3.TabStop = false;
-            this.ptbUp3.Visible = false;
             // 
             // label1
             // 
@@ -233,41 +201,17 @@
             this.ptbMaestria.TabIndex = 1;
             this.ptbMaestria.TabStop = false;
             // 
-            // ptbDown1
-            // 
-            this.ptbDown1.BackColor = System.Drawing.Color.Transparent;
-            this.ptbDown1.Image = global::JuegoNiñosPrimaria.Properties.Resources.Down;
-            this.ptbDown1.Location = new System.Drawing.Point(129, 219);
-            this.ptbDown1.Name = "ptbDown1";
-            this.ptbDown1.Size = new System.Drawing.Size(63, 55);
-            this.ptbDown1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbDown1.TabIndex = 14;
-            this.ptbDown1.TabStop = false;
-            this.ptbDown1.Visible = false;
-            // 
             // ptbDown2
             // 
             this.ptbDown2.BackColor = System.Drawing.Color.Transparent;
             this.ptbDown2.Image = global::JuegoNiñosPrimaria.Properties.Resources.Down;
-            this.ptbDown2.Location = new System.Drawing.Point(315, 219);
+            this.ptbDown2.Location = new System.Drawing.Point(274, 219);
             this.ptbDown2.Name = "ptbDown2";
             this.ptbDown2.Size = new System.Drawing.Size(63, 55);
             this.ptbDown2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbDown2.TabIndex = 15;
             this.ptbDown2.TabStop = false;
             this.ptbDown2.Visible = false;
-            // 
-            // ptbDown3
-            // 
-            this.ptbDown3.BackColor = System.Drawing.Color.Transparent;
-            this.ptbDown3.Image = global::JuegoNiñosPrimaria.Properties.Resources.Down;
-            this.ptbDown3.Location = new System.Drawing.Point(495, 219);
-            this.ptbDown3.Name = "ptbDown3";
-            this.ptbDown3.Size = new System.Drawing.Size(63, 55);
-            this.ptbDown3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbDown3.TabIndex = 16;
-            this.ptbDown3.TabStop = false;
-            this.ptbDown3.Visible = false;
             // 
             // btnIgualar
             // 
@@ -280,6 +224,7 @@
             this.btnIgualar.TabIndex = 17;
             this.btnIgualar.Text = "=";
             this.btnIgualar.UseVisualStyleBackColor = false;
+            this.btnIgualar.Click += new System.EventHandler(this.btnIgualar_Click);
             // 
             // btnPrueba
             // 
@@ -314,13 +259,9 @@
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnIgualar);
-            this.Controls.Add(this.ptbDown3);
             this.Controls.Add(this.ptbDown2);
-            this.Controls.Add(this.ptbDown1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ptbUp3);
             this.Controls.Add(this.ptbUp2);
-            this.Controls.Add(this.ptbUp1);
             this.Controls.Add(this.lblOperacion);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.lblNumero1);
@@ -332,13 +273,9 @@
             this.Load += new System.EventHandler(this.Practica_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUp1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbUp3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -356,14 +293,10 @@
         private System.Windows.Forms.Label lblNumero1;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Label lblOperacion;
-        private System.Windows.Forms.PictureBox ptbUp1;
         private System.Windows.Forms.PictureBox ptbUp2;
-        private System.Windows.Forms.PictureBox ptbUp3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox ptbMaestria;
-        private System.Windows.Forms.PictureBox ptbDown1;
         private System.Windows.Forms.PictureBox ptbDown2;
-        private System.Windows.Forms.PictureBox ptbDown3;
         private System.Windows.Forms.Button btnIgualar;
         private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.Button btnVolver;
