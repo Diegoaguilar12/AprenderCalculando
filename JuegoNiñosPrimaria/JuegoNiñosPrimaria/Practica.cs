@@ -69,7 +69,9 @@ namespace JuegoNiñosPrimaria
             lblOperacion.Text = "-";
 
             RNG();
-            
+            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text))
+                restaToolStripMenuItem_Click(sender, e);
+            else 
             a = int.Parse(lblNumero1.Text) - int.Parse(lblNumero2.Text);
             vari = 2;
 
