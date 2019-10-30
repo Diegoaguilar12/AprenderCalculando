@@ -47,10 +47,18 @@
             this.btnIgualar = new System.Windows.Forms.Button();
             this.btnPrueba = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBoxNumMaximo = new System.Windows.Forms.TextBox();
+            this.txtBoxNumMinimo = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnNumMinNumMax = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNumero2
@@ -249,6 +257,88 @@
             this.btnVolver.UseVisualStyleBackColor = false;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.groupBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.groupBox1.Controls.Add(this.btnNumMinNumMax);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtBoxNumMaximo);
+            this.groupBox1.Controls.Add(this.txtBoxNumMinimo);
+            this.groupBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Location = new System.Drawing.Point(114, 34);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(384, 160);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // txtBoxNumMaximo
+            // 
+            this.txtBoxNumMaximo.BackColor = System.Drawing.Color.Green;
+            this.txtBoxNumMaximo.Location = new System.Drawing.Point(249, 77);
+            this.txtBoxNumMaximo.Multiline = true;
+            this.txtBoxNumMaximo.Name = "txtBoxNumMaximo";
+            this.txtBoxNumMaximo.Size = new System.Drawing.Size(81, 54);
+            this.txtBoxNumMaximo.TabIndex = 2;
+            // 
+            // txtBoxNumMinimo
+            // 
+            this.txtBoxNumMinimo.BackColor = System.Drawing.Color.Green;
+            this.txtBoxNumMinimo.Location = new System.Drawing.Point(63, 77);
+            this.txtBoxNumMinimo.Multiline = true;
+            this.txtBoxNumMinimo.Name = "txtBoxNumMinimo";
+            this.txtBoxNumMinimo.Size = new System.Drawing.Size(81, 54);
+            this.txtBoxNumMinimo.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.ForeColor = System.Drawing.Color.OldLace;
+            this.label2.Location = new System.Drawing.Point(31, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 23);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Numero minimo";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.Color.OldLace;
+            this.label3.Location = new System.Drawing.Point(222, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 27);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Numero maximo";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.ForeColor = System.Drawing.Color.OldLace;
+            this.label4.Location = new System.Drawing.Point(119, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 34);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Ingrese Rango : ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNumMinNumMax
+            // 
+            this.btnNumMinNumMax.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNumMinNumMax.Location = new System.Drawing.Point(150, 127);
+            this.btnNumMinNumMax.Name = "btnNumMinNumMax";
+            this.btnNumMinNumMax.Size = new System.Drawing.Size(93, 27);
+            this.btnNumMinNumMax.TabIndex = 25;
+            this.btnNumMinNumMax.Text = "Ingresar";
+            this.btnNumMinNumMax.UseVisualStyleBackColor = false;
+            // 
             // Practica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,6 +346,7 @@
             this.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.SalonClases;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnIgualar);
@@ -276,6 +367,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +393,12 @@
         private System.Windows.Forms.Button btnIgualar;
         private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtBoxNumMaximo;
+        private System.Windows.Forms.TextBox txtBoxNumMinimo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnNumMinNumMax;
     }
 }

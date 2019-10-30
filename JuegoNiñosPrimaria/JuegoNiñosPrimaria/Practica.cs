@@ -60,7 +60,7 @@ namespace JuegoNiñosPrimaria
             lblOperacion.Text = "-";
 
             RNG();
-
+            
             a = int.Parse(lblNumero1.Text) - int.Parse(lblNumero2.Text);
             vari = 2;
 
@@ -95,7 +95,7 @@ namespace JuegoNiñosPrimaria
 
             if (a == int.Parse(txtResultado.Text))
             {
-                MessageBox.Show("Es correcto");
+               
                 ptbUp2.Visible = true;
                 ptbDown2.Visible = false;
                 RNG();
@@ -112,7 +112,7 @@ namespace JuegoNiñosPrimaria
                 
             else
             {
-                MessageBox.Show("Es incorrecto");
+               
                 ptbUp2.Visible = false;
                 ptbDown2.Visible = true;
                 contador++;
@@ -161,6 +161,11 @@ namespace JuegoNiñosPrimaria
 
             a = int.Parse(lblNumero1.Text) / int.Parse(lblNumero2.Text);
             vari = 4;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
