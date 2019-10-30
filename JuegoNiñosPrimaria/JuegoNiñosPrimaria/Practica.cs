@@ -16,6 +16,9 @@ namespace JuegoNiñosPrimaria
         public int a;
         public byte contador;
         public int vari;
+        public int n1;
+        public int n2;
+
 
         public Practica()
         {
@@ -24,12 +27,15 @@ namespace JuegoNiñosPrimaria
             a = 0;
             contador = 0;
             vari = 0;
+            n1 = 0;
+            n2 = 0;
+            groupBox1.Visible = true;
         }
         public void RNG()
         {
-            int r = rng.Next(1, 10);
+            int r = rng.Next(n1, n2);
             lblNumero1.Text = Convert.ToString(r);
-            r = rng.Next(1, 10);
+            r = rng.Next(n1, n2);
             lblNumero2.Text = Convert.ToString(r);
         }
 
@@ -57,6 +63,9 @@ namespace JuegoNiñosPrimaria
 
         private void restaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            
+
             lblOperacion.Text = "-";
 
             RNG();
@@ -134,6 +143,7 @@ namespace JuegoNiñosPrimaria
 
         private void multiplicaciónXToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             lblOperacion.Text = "x";
 
             RNG();
@@ -146,6 +156,7 @@ namespace JuegoNiñosPrimaria
 
         private void sumaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             lblOperacion.Text = "+";
             RNG();
             
@@ -156,6 +167,7 @@ namespace JuegoNiñosPrimaria
 
         private void divisiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             lblOperacion.Text = "/";
             RNG();
 
@@ -166,6 +178,26 @@ namespace JuegoNiñosPrimaria
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnNumMinNumMax_Click(object sender, EventArgs e)
+        {
+            n1 = int.Parse(txtBoxNumMinimo.Text);
+            n2 = int.Parse(txtBoxNumMaximo.Text);
+            groupBox1.Visible = false;
+        }
+
+      
+        private void btnRango_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = true;
+            lblNumero1.Text = "";
+            lblNumero2.Text = "";
         }
     }
 }

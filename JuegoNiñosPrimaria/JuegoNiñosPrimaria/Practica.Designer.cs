@@ -48,12 +48,13 @@
             this.btnPrueba = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNumMinNumMax = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtBoxNumMaximo = new System.Windows.Forms.TextBox();
             this.txtBoxNumMinimo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnNumMinNumMax = new System.Windows.Forms.Button();
+            this.btnRango = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
@@ -113,28 +114,28 @@
             // sumaToolStripMenuItem
             // 
             this.sumaToolStripMenuItem.Name = "sumaToolStripMenuItem";
-            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sumaToolStripMenuItem.Text = "Suma ";
             this.sumaToolStripMenuItem.Click += new System.EventHandler(this.sumaToolStripMenuItem_Click);
             // 
             // restaToolStripMenuItem
             // 
             this.restaToolStripMenuItem.Name = "restaToolStripMenuItem";
-            this.restaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.restaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.restaToolStripMenuItem.Text = "Resta ";
             this.restaToolStripMenuItem.Click += new System.EventHandler(this.restaToolStripMenuItem_Click);
             // 
             // multiplicaciónXToolStripMenuItem
             // 
             this.multiplicaciónXToolStripMenuItem.Name = "multiplicaciónXToolStripMenuItem";
-            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.multiplicaciónXToolStripMenuItem.Text = "Multiplicación  ";
             this.multiplicaciónXToolStripMenuItem.Click += new System.EventHandler(this.multiplicaciónXToolStripMenuItem_Click);
             // 
             // divisiónToolStripMenuItem
             // 
             this.divisiónToolStripMenuItem.Name = "divisiónToolStripMenuItem";
-            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.divisiónToolStripMenuItem.Text = "División  ";
             this.divisiónToolStripMenuItem.Click += new System.EventHandler(this.divisiónToolStripMenuItem_Click);
             // 
@@ -274,48 +275,18 @@
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // txtBoxNumMaximo
+            // btnNumMinNumMax
             // 
-            this.txtBoxNumMaximo.BackColor = System.Drawing.Color.Green;
-            this.txtBoxNumMaximo.Location = new System.Drawing.Point(249, 77);
-            this.txtBoxNumMaximo.Multiline = true;
-            this.txtBoxNumMaximo.Name = "txtBoxNumMaximo";
-            this.txtBoxNumMaximo.Size = new System.Drawing.Size(81, 54);
-            this.txtBoxNumMaximo.TabIndex = 2;
-            // 
-            // txtBoxNumMinimo
-            // 
-            this.txtBoxNumMinimo.BackColor = System.Drawing.Color.Green;
-            this.txtBoxNumMinimo.Location = new System.Drawing.Point(63, 77);
-            this.txtBoxNumMinimo.Multiline = true;
-            this.txtBoxNumMinimo.Name = "txtBoxNumMinimo";
-            this.txtBoxNumMinimo.Size = new System.Drawing.Size(81, 54);
-            this.txtBoxNumMinimo.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.Color.OldLace;
-            this.label2.Location = new System.Drawing.Point(31, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 23);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Numero minimo";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.ForeColor = System.Drawing.Color.OldLace;
-            this.label3.Location = new System.Drawing.Point(222, 44);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 27);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Numero maximo";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNumMinNumMax.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNumMinNumMax.Location = new System.Drawing.Point(150, 127);
+            this.btnNumMinNumMax.Name = "btnNumMinNumMax";
+            this.btnNumMinNumMax.Size = new System.Drawing.Size(93, 27);
+            this.btnNumMinNumMax.TabIndex = 25;
+            this.btnNumMinNumMax.Text = "Ingresar";
+            this.btnNumMinNumMax.UseVisualStyleBackColor = false;
+            this.btnNumMinNumMax.Click += new System.EventHandler(this.btnNumMinNumMax_Click);
             // 
             // label4
             // 
@@ -329,15 +300,65 @@
             this.label4.Text = "Ingrese Rango : ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnNumMinNumMax
+            // label3
             // 
-            this.btnNumMinNumMax.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnNumMinNumMax.Location = new System.Drawing.Point(150, 127);
-            this.btnNumMinNumMax.Name = "btnNumMinNumMax";
-            this.btnNumMinNumMax.Size = new System.Drawing.Size(93, 27);
-            this.btnNumMinNumMax.TabIndex = 25;
-            this.btnNumMinNumMax.Text = "Ingresar";
-            this.btnNumMinNumMax.UseVisualStyleBackColor = false;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.Color.OldLace;
+            this.label3.Location = new System.Drawing.Point(222, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 27);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Numero maximo";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.ForeColor = System.Drawing.Color.OldLace;
+            this.label2.Location = new System.Drawing.Point(31, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 23);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Numero minimo";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtBoxNumMaximo
+            // 
+            this.txtBoxNumMaximo.BackColor = System.Drawing.Color.Green;
+            this.txtBoxNumMaximo.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtBoxNumMaximo.ForeColor = System.Drawing.Color.OldLace;
+            this.txtBoxNumMaximo.Location = new System.Drawing.Point(249, 77);
+            this.txtBoxNumMaximo.Multiline = true;
+            this.txtBoxNumMaximo.Name = "txtBoxNumMaximo";
+            this.txtBoxNumMaximo.Size = new System.Drawing.Size(81, 54);
+            this.txtBoxNumMaximo.TabIndex = 2;
+            this.txtBoxNumMaximo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtBoxNumMinimo
+            // 
+            this.txtBoxNumMinimo.BackColor = System.Drawing.Color.Green;
+            this.txtBoxNumMinimo.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.txtBoxNumMinimo.ForeColor = System.Drawing.Color.OldLace;
+            this.txtBoxNumMinimo.Location = new System.Drawing.Point(63, 77);
+            this.txtBoxNumMinimo.Multiline = true;
+            this.txtBoxNumMinimo.Name = "txtBoxNumMinimo";
+            this.txtBoxNumMinimo.Size = new System.Drawing.Size(81, 54);
+            this.txtBoxNumMinimo.TabIndex = 1;
+            this.txtBoxNumMinimo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnRango
+            // 
+            this.btnRango.BackColor = System.Drawing.Color.SandyBrown;
+            this.btnRango.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.btnRango.Location = new System.Drawing.Point(249, 329);
+            this.btnRango.Name = "btnRango";
+            this.btnRango.Size = new System.Drawing.Size(120, 40);
+            this.btnRango.TabIndex = 22;
+            this.btnRango.Text = "Rango ";
+            this.btnRango.UseVisualStyleBackColor = false;
+            this.btnRango.Click += new System.EventHandler(this.btnRango_Click);
             // 
             // Practica
             // 
@@ -346,6 +367,7 @@
             this.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.SalonClases;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
+            this.Controls.Add(this.btnRango);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnPrueba);
@@ -400,5 +422,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnNumMinNumMax;
+        private System.Windows.Forms.Button btnRango;
     }
 }
