@@ -73,6 +73,26 @@ namespace JuegoNiñosPrimaria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Corazon {
+            get {
+                object obj = ResourceManager.GetObject("Corazon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Corazones {
+            get {
+                object obj = ResourceManager.GetObject("Corazones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Down {
             get {
                 object obj = ResourceManager.GetObject("Down", resourceCulture);
@@ -96,6 +116,16 @@ namespace JuegoNiñosPrimaria.Properties {
         internal static System.Drawing.Bitmap Profesora {
             get {
                 object obj = ResourceManager.GetObject("Profesora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PuertaAbierta {
+            get {
+                object obj = ResourceManager.GetObject("PuertaAbierta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
