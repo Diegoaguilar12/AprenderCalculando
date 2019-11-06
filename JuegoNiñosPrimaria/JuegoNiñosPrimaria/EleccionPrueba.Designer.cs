@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PuertaCerrada = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PuertaCerrada)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PuertaCerrada
             // 
-            this.pictureBox1.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.PuertaCerrada;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 100);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 250);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PuertaCerrada.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.PuertaCerrada;
+            this.PuertaCerrada.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PuertaCerrada.Location = new System.Drawing.Point(124, 101);
+            this.PuertaCerrada.Name = "PuertaCerrada";
+            this.PuertaCerrada.Size = new System.Drawing.Size(120, 250);
+            this.PuertaCerrada.TabIndex = 1;
+            this.PuertaCerrada.TabStop = false;
+            this.PuertaCerrada.Click += new System.EventHandler(this.PuertaCerrada_Click);
             // 
             // EleccionPrueba
             // 
@@ -49,16 +50,18 @@
             this.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.PuertaAbierta;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PuertaCerrada);
             this.Name = "EleccionPrueba";
             this.Text = "EleccionPrueba";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Click += new System.EventHandler(this.EleccionPrueba_Click_2);
+            this.MouseHover += new System.EventHandler(this.EleccionPrueba_MouseHover);
+            ((System.ComponentModel.ISupportInitialize)(this.PuertaCerrada)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PuertaCerrada;
     }
 }

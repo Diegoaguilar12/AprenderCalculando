@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AprenderCalculando));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.btnPracticar = new System.Windows.Forms.Button();
             this.btnPrueba = new System.Windows.Forms.Button();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +40,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-116, 52);
+            this.pictureBox1.Location = new System.Drawing.Point(-117, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(305, 317);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,12 +81,6 @@
             this.btnPrueba.Text = "¿Prueba?";
             this.btnPrueba.UseVisualStyleBackColor = false;
             // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
             // AprenderCalculando
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -116,7 +108,6 @@
         private System.Windows.Forms.Label lblBienvenida;
         private System.Windows.Forms.Button btnPracticar;
         private System.Windows.Forms.Button btnPrueba;
-        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

@@ -66,7 +66,7 @@
             // 
             this.ptbMaestria.BackColor = System.Drawing.Color.Transparent;
             this.ptbMaestria.Image = ((System.Drawing.Image)(resources.GetObject("ptbMaestria.Image")));
-            this.ptbMaestria.Location = new System.Drawing.Point(-110, 52);
+            this.ptbMaestria.Location = new System.Drawing.Point(-116, 52);
             this.ptbMaestria.Name = "ptbMaestria";
             this.ptbMaestria.Size = new System.Drawing.Size(305, 317);
             this.ptbMaestria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
