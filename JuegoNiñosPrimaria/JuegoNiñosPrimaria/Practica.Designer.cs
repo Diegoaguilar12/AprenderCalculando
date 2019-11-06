@@ -55,11 +55,22 @@
             this.txtBoxNumMaximo = new System.Windows.Forms.TextBox();
             this.txtBoxNumMinimo = new System.Windows.Forms.TextBox();
             this.btnRango = new System.Windows.Forms.Button();
+            this.grboxNumRacionalesoNo = new System.Windows.Forms.GroupBox();
+            this.btnNumEnteros = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnNumRacionales = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUp2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.grboxNumRacionalesoNo.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNumero2
@@ -114,28 +125,28 @@
             // sumaToolStripMenuItem
             // 
             this.sumaToolStripMenuItem.Name = "sumaToolStripMenuItem";
-            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sumaToolStripMenuItem.Text = "Suma ";
             this.sumaToolStripMenuItem.Click += new System.EventHandler(this.sumaToolStripMenuItem_Click);
             // 
             // restaToolStripMenuItem
             // 
             this.restaToolStripMenuItem.Name = "restaToolStripMenuItem";
-            this.restaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.restaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.restaToolStripMenuItem.Text = "Resta ";
             this.restaToolStripMenuItem.Click += new System.EventHandler(this.restaToolStripMenuItem_Click);
             // 
             // multiplicaciónXToolStripMenuItem
             // 
             this.multiplicaciónXToolStripMenuItem.Name = "multiplicaciónXToolStripMenuItem";
-            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.multiplicaciónXToolStripMenuItem.Text = "Multiplicación  ";
             this.multiplicaciónXToolStripMenuItem.Click += new System.EventHandler(this.multiplicaciónXToolStripMenuItem_Click);
             // 
             // divisiónToolStripMenuItem
             // 
             this.divisiónToolStripMenuItem.Name = "divisiónToolStripMenuItem";
-            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.divisiónToolStripMenuItem.Text = "División  ";
             this.divisiónToolStripMenuItem.Click += new System.EventHandler(this.divisiónToolStripMenuItem_Click);
             // 
@@ -203,7 +214,7 @@
             // 
             this.ptbMaestria.BackColor = System.Drawing.Color.Transparent;
             this.ptbMaestria.Image = ((System.Drawing.Image)(resources.GetObject("ptbMaestria.Image")));
-            this.ptbMaestria.Location = new System.Drawing.Point(-113, 52);
+            this.ptbMaestria.Location = new System.Drawing.Point(-118, 53);
             this.ptbMaestria.Name = "ptbMaestria";
             this.ptbMaestria.Size = new System.Drawing.Size(305, 317);
             this.ptbMaestria.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -262,11 +273,17 @@
             // 
             this.groupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.groupBox1.BackColor = System.Drawing.Color.DarkGreen;
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.btnNumMinNumMax);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtBoxNumMaximo);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txtBoxNumMinimo);
             this.groupBox1.ForeColor = System.Drawing.Color.Transparent;
             this.groupBox1.Location = new System.Drawing.Point(114, 34);
@@ -360,6 +377,126 @@
             this.btnRango.UseVisualStyleBackColor = false;
             this.btnRango.Click += new System.EventHandler(this.btnRango_Click);
             // 
+            // grboxNumRacionalesoNo
+            // 
+            this.grboxNumRacionalesoNo.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.grboxNumRacionalesoNo.BackColor = System.Drawing.Color.DarkGreen;
+            this.grboxNumRacionalesoNo.Controls.Add(this.btnNumRacionales);
+            this.grboxNumRacionalesoNo.Controls.Add(this.btnNumEnteros);
+            this.grboxNumRacionalesoNo.Controls.Add(this.label5);
+            this.grboxNumRacionalesoNo.ForeColor = System.Drawing.Color.Transparent;
+            this.grboxNumRacionalesoNo.Location = new System.Drawing.Point(114, 34);
+            this.grboxNumRacionalesoNo.Name = "grboxNumRacionalesoNo";
+            this.grboxNumRacionalesoNo.Size = new System.Drawing.Size(384, 160);
+            this.grboxNumRacionalesoNo.TabIndex = 29;
+            this.grboxNumRacionalesoNo.TabStop = false;
+            this.grboxNumRacionalesoNo.Text = "groupBox2";
+            // 
+            // btnNumEnteros
+            // 
+            this.btnNumEnteros.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNumEnteros.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnNumEnteros.Location = new System.Drawing.Point(36, 63);
+            this.btnNumEnteros.Name = "btnNumEnteros";
+            this.btnNumEnteros.Size = new System.Drawing.Size(129, 77);
+            this.btnNumEnteros.TabIndex = 25;
+            this.btnNumEnteros.Text = "Numeros enteros";
+            this.btnNumEnteros.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.DarkGreen;
+            this.button2.Font = new System.Drawing.Font("Segoe Print", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button2.ForeColor = System.Drawing.Color.OldLace;
+            this.button2.Location = new System.Drawing.Point(124, 56);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(63, 72);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "=";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label8.ForeColor = System.Drawing.Color.OldLace;
+            this.label8.Location = new System.Drawing.Point(5, 2);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(368, 26);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Realice la siguiente operación";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe Print", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.OldLace;
+            this.label9.Location = new System.Drawing.Point(3, 69);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(108, 54);
+            this.label9.TabIndex = 26;
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.DarkGreen;
+            this.textBox3.Font = new System.Drawing.Font("Segoe Print", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.textBox3.ForeColor = System.Drawing.Color.OldLace;
+            this.textBox3.Location = new System.Drawing.Point(217, 56);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(138, 72);
+            this.textBox3.TabIndex = 25;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Cursor = System.Windows.Forms.Cursors.No;
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label10.ForeColor = System.Drawing.Color.OldLace;
+            this.label10.Location = new System.Drawing.Point(0, 17);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(118, 60);
+            this.label10.TabIndex = 24;
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Cursor = System.Windows.Forms.Cursors.No;
+            this.label11.Font = new System.Drawing.Font("Segoe Print", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.OldLace;
+            this.label11.Location = new System.Drawing.Point(0, 112);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 60);
+            this.label11.TabIndex = 23;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label5.ForeColor = System.Drawing.Color.OldLace;
+            this.label5.Location = new System.Drawing.Point(79, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(234, 34);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Seleccione una opcion";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNumRacionales
+            // 
+            this.btnNumRacionales.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNumRacionales.Font = new System.Drawing.Font("Segoe Print", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnNumRacionales.Location = new System.Drawing.Point(227, 63);
+            this.btnNumRacionales.Name = "btnNumRacionales";
+            this.btnNumRacionales.Size = new System.Drawing.Size(128, 74);
+            this.btnNumRacionales.TabIndex = 26;
+            this.btnNumRacionales.Text = "Numeros racionales ";
+            this.btnNumRacionales.UseVisualStyleBackColor = false;
+            // 
             // Practica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +504,7 @@
             this.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.SalonClases;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
+            this.Controls.Add(this.grboxNumRacionalesoNo);
             this.Controls.Add(this.btnRango);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVolver);
@@ -391,6 +529,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.grboxNumRacionalesoNo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,5 +562,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnNumMinNumMax;
         private System.Windows.Forms.Button btnRango;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox grboxNumRacionalesoNo;
+        private System.Windows.Forms.Button btnNumRacionales;
+        private System.Windows.Forms.Button btnNumEnteros;
+        private System.Windows.Forms.Label label5;
     }
 }
