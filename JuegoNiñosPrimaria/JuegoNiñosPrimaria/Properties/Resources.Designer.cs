@@ -153,6 +153,16 @@ namespace JuegoNiñosPrimaria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PuertaCerrada {
+            get {
+                object obj = ResourceManager.GetObject("PuertaCerrada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SalonClases {
             get {
                 object obj = ResourceManager.GetObject("SalonClases", resourceCulture);

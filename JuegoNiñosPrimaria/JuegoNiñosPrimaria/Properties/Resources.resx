@@ -142,13 +142,16 @@
   <data name="Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PuertaAbierta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuertaAbierta2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="3592863-accounting-calculate-calculation-calculator-general-math-office_107744" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3592863-accounting-calculate-calculation-calculator-general-math-office_107744.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Corazones" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Corazones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PuertaAbierta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PuertaAbierta2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PuertaCerrada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PuertaCerrada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
