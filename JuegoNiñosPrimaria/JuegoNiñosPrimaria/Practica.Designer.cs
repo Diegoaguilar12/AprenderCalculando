@@ -114,28 +114,28 @@
             // sumaToolStripMenuItem
             // 
             this.sumaToolStripMenuItem.Name = "sumaToolStripMenuItem";
-            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sumaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.sumaToolStripMenuItem.Text = "Suma ";
             this.sumaToolStripMenuItem.Click += new System.EventHandler(this.sumaToolStripMenuItem_Click);
             // 
             // restaToolStripMenuItem
             // 
             this.restaToolStripMenuItem.Name = "restaToolStripMenuItem";
-            this.restaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.restaToolStripMenuItem.Text = "Resta ";
             this.restaToolStripMenuItem.Click += new System.EventHandler(this.restaToolStripMenuItem_Click);
             // 
             // multiplicaciónXToolStripMenuItem
             // 
             this.multiplicaciónXToolStripMenuItem.Name = "multiplicaciónXToolStripMenuItem";
-            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.multiplicaciónXToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.multiplicaciónXToolStripMenuItem.Text = "Multiplicación  ";
             this.multiplicaciónXToolStripMenuItem.Click += new System.EventHandler(this.multiplicaciónXToolStripMenuItem_Click);
             // 
             // divisiónToolStripMenuItem
             // 
             this.divisiónToolStripMenuItem.Name = "divisiónToolStripMenuItem";
-            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.divisiónToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.divisiónToolStripMenuItem.Text = "División  ";
             this.divisiónToolStripMenuItem.Click += new System.EventHandler(this.divisiónToolStripMenuItem_Click);
             // 
