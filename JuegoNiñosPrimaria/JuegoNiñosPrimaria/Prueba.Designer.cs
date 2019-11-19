@@ -51,15 +51,9 @@
             this.divisiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNumero2 = new System.Windows.Forms.Label();
             this.btnRango = new System.Windows.Forms.Button();
-            this.ptbDown2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ptbMaestria
@@ -231,6 +225,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(614, 28);
             this.toolStrip1.TabIndex = 23;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripLabel1
             // 
@@ -303,42 +298,6 @@
             this.btnRango.Text = "Rango ";
             this.btnRango.UseVisualStyleBackColor = false;
             // 
-            // ptbDown2
-            // 
-            this.ptbDown2.BackColor = System.Drawing.Color.Transparent;
-            this.ptbDown2.Image = global::JuegoNiñosPrimaria.Properties.Resources.Corazon;
-            this.ptbDown2.Location = new System.Drawing.Point(276, 214);
-            this.ptbDown2.Name = "ptbDown2";
-            this.ptbDown2.Size = new System.Drawing.Size(63, 55);
-            this.ptbDown2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbDown2.TabIndex = 31;
-            this.ptbDown2.TabStop = false;
-            this.ptbDown2.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::JuegoNiñosPrimaria.Properties.Resources.Corazon;
-            this.pictureBox1.Location = new System.Drawing.Point(454, 214);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::JuegoNiñosPrimaria.Properties.Resources.Corazon;
-            this.pictureBox2.Location = new System.Drawing.Point(94, 214);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 33;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
             // Prueba
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,9 +305,6 @@
             this.BackgroundImage = global::JuegoNiñosPrimaria.Properties.Resources.SalonClases;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ptbDown2);
             this.Controls.Add(this.btnRango);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnIgualar);
@@ -366,9 +322,6 @@
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,8 +351,5 @@
         private System.Windows.Forms.ToolStripMenuItem divisiónToolStripMenuItem;
         private System.Windows.Forms.Label lblNumero2;
         private System.Windows.Forms.Button btnRango;
-        private System.Windows.Forms.PictureBox ptbDown2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

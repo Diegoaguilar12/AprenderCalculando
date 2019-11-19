@@ -19,12 +19,15 @@ namespace JuegoNiñosPrimaria
 
         private void btnPracticar_Click(object sender, EventArgs e)
         {
-            /*Practica MenuPractica = new Practica();
+            Practica MenuPractica = new Practica();
             MenuPractica.Show();
-            this.Hide();*/
-            EleccionPrueba eleccion = new EleccionPrueba();
-            eleccion.Show();
             this.Hide();
+            
+        }
+
+        private void btnPrueba_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

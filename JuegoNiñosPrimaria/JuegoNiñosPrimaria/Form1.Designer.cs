@@ -80,6 +80,7 @@
             this.btnPrueba.TabIndex = 3;
             this.btnPrueba.Text = "¿Prueba?";
             this.btnPrueba.UseVisualStyleBackColor = false;
+            this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
             // AprenderCalculando
             // 
