@@ -269,7 +269,7 @@
             this.groupBox1.Controls.Add(this.txtBoxNumMaximo);
             this.groupBox1.Controls.Add(this.txtBoxNumMinimo);
             this.groupBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Location = new System.Drawing.Point(124, 31);
+            this.groupBox1.Location = new System.Drawing.Point(114, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(384, 160);
             this.groupBox1.TabIndex = 21;

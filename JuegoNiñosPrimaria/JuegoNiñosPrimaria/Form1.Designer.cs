@@ -49,6 +49,7 @@
             // 
             // lblBienvenida
             // 
+            this.lblBienvenida.AutoEllipsis = true;
             this.lblBienvenida.BackColor = System.Drawing.Color.Transparent;
             this.lblBienvenida.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.ForeColor = System.Drawing.Color.OldLace;
