@@ -66,12 +66,6 @@
     <Compile Include="Prueba.Designer.cs">
       <DependentUpon>Prueba.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tabla Resultado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tabla Resultado.Designer.cs">
-      <DependentUpon>Tabla Resultado.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,9 +84,6 @@
     </Compile>
     <EmbeddedResource Include="Prueba.resx">
       <DependentUpon>Prueba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tabla Resultado.resx">
-      <DependentUpon>Tabla Resultado.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PuertaCerrada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalonClasesPizarron.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

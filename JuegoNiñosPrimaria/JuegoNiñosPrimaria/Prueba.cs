@@ -160,5 +160,20 @@ namespace JuegoNiñosPrimaria
             }
             txtResultado.Text = "";
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
