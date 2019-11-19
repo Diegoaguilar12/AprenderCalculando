@@ -202,5 +202,7 @@ namespace JuegoNiñosPrimaria
             lblNumero1.Text = "";
             lblNumero2.Text = "";
         }
+
+        
     }
 }

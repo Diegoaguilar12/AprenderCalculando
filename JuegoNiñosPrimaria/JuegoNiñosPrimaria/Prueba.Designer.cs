@@ -50,18 +50,17 @@
             this.multiplicaciónXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.divisiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNumero2 = new System.Windows.Forms.Label();
-            this.btnRango = new System.Windows.Forms.Button();
             this.GpbResultado = new System.Windows.Forms.GroupBox();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.lbl6 = new System.Windows.Forms.Label();
-            this.lbl7 = new System.Windows.Forms.Label();
-            this.lbl8 = new System.Windows.Forms.Label();
-            this.lbl9 = new System.Windows.Forms.Label();
             this.lbl10 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -301,17 +300,6 @@
             this.lblNumero2.TabIndex = 22;
             this.lblNumero2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnRango
-            // 
-            this.btnRango.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnRango.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRango.Location = new System.Drawing.Point(250, 329);
-            this.btnRango.Name = "btnRango";
-            this.btnRango.Size = new System.Drawing.Size(120, 40);
-            this.btnRango.TabIndex = 30;
-            this.btnRango.Text = "Rango ";
-            this.btnRango.UseVisualStyleBackColor = false;
-            // 
             // GpbResultado
             // 
             this.GpbResultado.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -333,85 +321,29 @@
             this.GpbResultado.TabIndex = 30;
             this.GpbResultado.TabStop = false;
             this.GpbResultado.Text = "groupBox2";
+            this.GpbResultado.Visible = false;
             // 
-            // lbl1
+            // lbl10
             // 
-            this.lbl1.BackColor = System.Drawing.Color.Transparent;
-            this.lbl1.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl1.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl1.Location = new System.Drawing.Point(0, 8);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(187, 27);
-            this.lbl1.TabIndex = 22;
-            this.lbl1.Text = "x number";
+            this.lbl10.BackColor = System.Drawing.Color.Transparent;
+            this.lbl10.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl10.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl10.Location = new System.Drawing.Point(197, 122);
+            this.lbl10.Name = "lbl10";
+            this.lbl10.Size = new System.Drawing.Size(187, 27);
+            this.lbl10.TabIndex = 31;
+            this.lbl10.Text = "x number";
             // 
-            // lbl2
+            // lbl9
             // 
-            this.lbl2.BackColor = System.Drawing.Color.Transparent;
-            this.lbl2.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl2.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl2.Location = new System.Drawing.Point(0, 35);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(187, 27);
-            this.lbl2.TabIndex = 23;
-            this.lbl2.Text = "x number";
-            this.lbl2.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // lbl3
-            // 
-            this.lbl3.BackColor = System.Drawing.Color.Transparent;
-            this.lbl3.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl3.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl3.Location = new System.Drawing.Point(0, 62);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(188, 27);
-            this.lbl3.TabIndex = 24;
-            this.lbl3.Text = "x number";
-            // 
-            // lbl4
-            // 
-            this.lbl4.BackColor = System.Drawing.Color.Transparent;
-            this.lbl4.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl4.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl4.Location = new System.Drawing.Point(0, 92);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(187, 27);
-            this.lbl4.TabIndex = 25;
-            this.lbl4.Text = "x number";
-            // 
-            // lbl5
-            // 
-            this.lbl5.BackColor = System.Drawing.Color.Transparent;
-            this.lbl5.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl5.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl5.Location = new System.Drawing.Point(0, 122);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(187, 27);
-            this.lbl5.TabIndex = 26;
-            this.lbl5.Text = "x number";
-            // 
-            // lbl6
-            // 
-            this.lbl6.BackColor = System.Drawing.Color.Transparent;
-            this.lbl6.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl6.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl6.Location = new System.Drawing.Point(197, 8);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(187, 27);
-            this.lbl6.TabIndex = 27;
-            this.lbl6.Text = "x number";
-            // 
-            // lbl7
-            // 
-            this.lbl7.BackColor = System.Drawing.Color.Transparent;
-            this.lbl7.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl7.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl7.Location = new System.Drawing.Point(197, 35);
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(187, 27);
-            this.lbl7.TabIndex = 28;
-            this.lbl7.Text = "x number";
-            this.lbl7.Click += new System.EventHandler(this.label11_Click);
+            this.lbl9.BackColor = System.Drawing.Color.Transparent;
+            this.lbl9.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl9.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl9.Location = new System.Drawing.Point(197, 92);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(187, 27);
+            this.lbl9.TabIndex = 30;
+            this.lbl9.Text = "x number";
             // 
             // lbl8
             // 
@@ -425,27 +357,84 @@
             this.lbl8.Text = "x number";
             this.lbl8.Click += new System.EventHandler(this.lbl8_Click);
             // 
-            // lbl9
+            // lbl7
             // 
-            this.lbl9.BackColor = System.Drawing.Color.Transparent;
-            this.lbl9.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl9.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl9.Location = new System.Drawing.Point(197, 92);
-            this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(187, 27);
-            this.lbl9.TabIndex = 30;
-            this.lbl9.Text = "x number";
+            this.lbl7.BackColor = System.Drawing.Color.Transparent;
+            this.lbl7.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl7.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl7.Location = new System.Drawing.Point(197, 35);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(187, 27);
+            this.lbl7.TabIndex = 28;
+            this.lbl7.Text = "x number";
+            this.lbl7.Click += new System.EventHandler(this.label11_Click);
             // 
-            // lbl10
+            // lbl6
             // 
-            this.lbl10.BackColor = System.Drawing.Color.Transparent;
-            this.lbl10.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.lbl10.ForeColor = System.Drawing.Color.OldLace;
-            this.lbl10.Location = new System.Drawing.Point(197, 122);
-            this.lbl10.Name = "lbl10";
-            this.lbl10.Size = new System.Drawing.Size(187, 27);
-            this.lbl10.TabIndex = 31;
-            this.lbl10.Text = "x number";
+            this.lbl6.BackColor = System.Drawing.Color.Transparent;
+            this.lbl6.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl6.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl6.Location = new System.Drawing.Point(197, 8);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(187, 27);
+            this.lbl6.TabIndex = 27;
+            this.lbl6.Text = "x number";
+            // 
+            // lbl5
+            // 
+            this.lbl5.BackColor = System.Drawing.Color.Transparent;
+            this.lbl5.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl5.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl5.Location = new System.Drawing.Point(0, 122);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(187, 27);
+            this.lbl5.TabIndex = 26;
+            this.lbl5.Text = "x number";
+            // 
+            // lbl4
+            // 
+            this.lbl4.BackColor = System.Drawing.Color.Transparent;
+            this.lbl4.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl4.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl4.Location = new System.Drawing.Point(0, 92);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(187, 27);
+            this.lbl4.TabIndex = 25;
+            this.lbl4.Text = "x number";
+            // 
+            // lbl3
+            // 
+            this.lbl3.BackColor = System.Drawing.Color.Transparent;
+            this.lbl3.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl3.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl3.Location = new System.Drawing.Point(0, 62);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(188, 27);
+            this.lbl3.TabIndex = 24;
+            this.lbl3.Text = "x number";
+            // 
+            // lbl2
+            // 
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl2.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl2.Location = new System.Drawing.Point(0, 35);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(187, 27);
+            this.lbl2.TabIndex = 23;
+            this.lbl2.Text = "x number";
+            this.lbl2.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl1.Font = new System.Drawing.Font("Segoe Print", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbl1.ForeColor = System.Drawing.Color.OldLace;
+            this.lbl1.Location = new System.Drawing.Point(0, 8);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(187, 27);
+            this.lbl1.TabIndex = 22;
+            this.lbl1.Text = "x number";
             // 
             // Prueba
             // 
@@ -455,7 +444,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 381);
             this.Controls.Add(this.GpbResultado);
-            this.Controls.Add(this.btnRango);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnIgualar);
             this.Controls.Add(this.label1);
@@ -468,6 +456,7 @@
             this.Name = "Prueba";
             this.Text = "Prueba";
             this.Load += new System.EventHandler(this.Prueba_Load);
+            this.Click += new System.EventHandler(this.Prueba_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -502,7 +491,6 @@
         private System.Windows.Forms.ToolStripMenuItem multiplicaciónXToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem divisiónToolStripMenuItem;
         private System.Windows.Forms.Label lblNumero2;
-        private System.Windows.Forms.Button btnRango;
         private System.Windows.Forms.GroupBox GpbResultado;
         private System.Windows.Forms.Label lbl9;
         private System.Windows.Forms.Label lbl8;
