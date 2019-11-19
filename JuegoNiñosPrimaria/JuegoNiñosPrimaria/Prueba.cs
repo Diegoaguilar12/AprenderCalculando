@@ -16,10 +16,13 @@ namespace JuegoNiñosPrimaria
         public Random op;
         public int a;
         public byte contador;
+        public byte CantOperaciones;
         public int vari;
         public int n1;
         public int n2;
-        string [] ope; 
+        string [] ope;
+        string correcto;
+        string incorrecto;
     public Prueba()
         {
             InitializeComponent();
@@ -32,6 +35,9 @@ namespace JuegoNiñosPrimaria
             n2 = 0;
             groupBox1.Visible = true;
             ope = new string[10];
+            correcto = "Correcto";
+            incorrecto = "Incorrecto";
+
         }
 
         public void RNG()
@@ -47,6 +53,15 @@ namespace JuegoNiñosPrimaria
         public void ORG()
         {
             vari = rng.Next(1, 4);
+
+            if (vari == 1)
+                lblOperacion.Text = "+";
+            if (vari == 2)
+                lblOperacion.Text = "-";
+            if (vari == 3)
+                lblOperacion.Text = "x";
+            if (vari == 4)
+                lblOperacion.Text = "/";
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -56,30 +71,51 @@ namespace JuegoNiñosPrimaria
 
         public void Suma()
         {
-
+            a = int.Parse(lblNumero1.Text) + int.Parse(lblNumero2.Text);
+           
         }
         public void Resta()
         {
-
+            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text))
+                Resta();
+            else
+                a = int.Parse(lblNumero1.Text) - int.Parse(lblNumero2.Text);
+          
         }
         public void Division()
         {
+            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text) || int.Parse(lblNumero1.Text) < 0)
+                Division();
+            else
+                a = int.Parse(lblNumero1.Text) / int.Parse(lblNumero2.Text);
+           
 
         }
         public void Multiplicacion()
         {
+            a = int.Parse(lblNumero1.Text) * int.Parse(lblNumero2.Text);
+           
+        }
+
+      
+
+        private void Prueba_Load(object sender, EventArgs e)
+        {
 
         }
 
-        private void btnIgualar_Click(object sender, EventArgs e)
+        private void btnNumMinNumMax_Click(object sender, EventArgs e)
         {
-            object r = sender;
+            n1 = int.Parse(txtBoxNumMinimo.Text);
+            n2 = int.Parse(txtBoxNumMaximo.Text);
+            groupBox1.Visible = false;
+            RNG();
+        }
 
+        private void btnIgualar_Click_1(object sender, EventArgs e)
+        {
             if (a == int.Parse(txtResultado.Text))
             {
-
-              
-                RNG();
 
                 if (vari == 1)
                     Suma();
@@ -88,29 +124,38 @@ namespace JuegoNiñosPrimaria
                 if (vari == 3)
                     Multiplicacion();
                 if (vari == 4)
-                   Division();
-                ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + a.ToString();
+                    Division();
+                ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + a.ToString() + correcto;
                 contador++;
-                ORG();
+                RNG();
+                CantOperaciones++;
             }
 
 
             else
             {
-
-                
-
-               
+                if (vari == 1)
+                    Suma();
+                if (vari == 2)
+                    Resta();
+                if (vari == 3)
+                    Multiplicacion();
+                if (vari == 4)
+                    Division();
+                ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + a.ToString() + incorrecto;
+                contador++;
+                RNG();
+                CantOperaciones++;
             }
 
 
 
 
-            if (contador == 3)
+            if (CantOperaciones == 10)
             {
-                MessageBox.Show("La respuesta correcta es: " + a);
-
-                contador = 0;
+                MessageBox.Show("Termino el examen");
+                foreach (string x in ope)
+                    Console.WriteLine(x);
                 return;
             }
             txtResultado.Text = "";

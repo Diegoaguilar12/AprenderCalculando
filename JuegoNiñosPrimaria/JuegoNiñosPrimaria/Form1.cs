@@ -27,6 +27,13 @@ namespace JuegoNiñosPrimaria
 
         private void btnPrueba_Click(object sender, EventArgs e)
         {
+            Prueba MenuPrueba = new Prueba();
+            MenuPrueba.Show();
+            this.Hide();
+        }
+
+        private void AprenderCalculando_Load(object sender, EventArgs e)
+        {
 
         }
     }

@@ -171,9 +171,10 @@ namespace JuegoNiñosPrimaria
         {
            
             lblOperacion.Text = "/";
-            RNG();
-
-            a = int.Parse(lblNumero1.Text) / int.Parse(lblNumero2.Text);
+            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text) || int.Parse(lblNumero1.Text) < 0)
+                divisiónToolStripMenuItem_Click(sender, e);
+            else
+                a = int.Parse(lblNumero1.Text) / int.Parse(lblNumero2.Text);
             vari = 4;
         }
 
