@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JuegoNiñosPrimaria
@@ -38,7 +31,7 @@ namespace JuegoNiñosPrimaria
             ope = new string[10];
             resultados = new Label[10];
             correcto = "Bien";
-            incorrecto = "Ins";
+            incorrecto = "Mal";
 
             resultados[0] = lbl1;
             resultados[1] = lbl2;
@@ -52,20 +45,18 @@ namespace JuegoNiñosPrimaria
             resultados[9] = lbl10;
 
         }
-
         public void RNG()
         {
-            int r = rng.Next(n1, n2);
+            int r = rng.Next(n1, n2+1);
             lblNumero1.Text = Convert.ToString(r);
-            r = rng.Next(n1, n2);
+            r = rng.Next(n1, n2+1);
             lblNumero2.Text = Convert.ToString(r);
-            ORG();
+           
 
         }
-
         public void ORG()
         {
-            vari = rng.Next(1, 4);
+            vari = rng.Next(1, 5);
 
             if (vari == 1)
                 lblOperacion.Text = "+";
@@ -77,20 +68,19 @@ namespace JuegoNiñosPrimaria
                 lblOperacion.Text = "/";
             SelecOperacion();
         }
-
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
-
         public void Suma()
         {
+            RNG();
             a = int.Parse(lblNumero1.Text) + int.Parse(lblNumero2.Text);
 
         }
         public void Resta()
         {
-            
+            RNG();
             if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text))
                 Resta();
             else
@@ -99,7 +89,8 @@ namespace JuegoNiñosPrimaria
         }
         public void Division()
         {
-            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text) || int.Parse(lblNumero1.Text) < 0)
+            RNG();
+            if (int.Parse(lblNumero1.Text) < int.Parse(lblNumero2.Text) || int.Parse(lblNumero2.Text) == 0)
                 Division();
             else
                 a = int.Parse(lblNumero1.Text) / int.Parse(lblNumero2.Text);
@@ -108,12 +99,10 @@ namespace JuegoNiñosPrimaria
         }
         public void Multiplicacion()
         {
+            RNG();
             a = int.Parse(lblNumero1.Text) * int.Parse(lblNumero2.Text);
 
         }
-
-
-
         private void Prueba_Load(object sender, EventArgs e)
         {
 
@@ -121,62 +110,65 @@ namespace JuegoNiñosPrimaria
 
         private void btnNumMinNumMax_Click(object sender, EventArgs e)
         {
-            n1 = int.Parse(txtBoxNumMinimo.Text);
-            n2 = int.Parse(txtBoxNumMaximo.Text);
-            groupBox1.Visible = false;
-            RNG();
+            if(txtBoxNumMinimo.Text=="" || txtBoxNumMaximo.Text == "")
+            {
+                MessageBox.Show("Ingrese valores valido");
+            }
+            else
+            {
+                n1 = int.Parse(txtBoxNumMinimo.Text);
+                n2 = int.Parse(txtBoxNumMaximo.Text);
+                groupBox1.Visible = false;
+                LLamar();
+            }          
+        }
+
+        public void LLamar()
+        {           
+            ORG();
         }
 
         private void btnIgualar_Click_1(object sender, EventArgs e)
         {
-            if (a == int.Parse(txtResultado.Text))
+            if(txtResultado.Text == "")
             {
-
-               
-                ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + txtResultado.Text + " " + correcto;
-                contador++;
-                CantOperaciones++;
-                MostrarResultados();
-                RNG();
-               
+                MessageBox.Show("Ingrese un valor valido");
             }
-
-
             else
             {
-              
-                ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + txtResultado.Text + " " +incorrecto;
-                contador++;
-                CantOperaciones++;
-                MostrarResultados();
-                RNG();
-               
-            }
-
-
-
-
-            if (CantOperaciones == 10)
-            {
-                MostrarResultados();
-                MessageBox.Show("Termino el examen");
-                
-
-                return;
-            }
-            txtResultado.Text = "";
-        }
-
+                    if (a == int.Parse(txtResultado.Text))
+                    {
+                        ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + txtResultado.Text + " " + correcto;
+                        contador++;
+                        CantOperaciones++;
+                        MostrarResultados();
+                    }
+                    else
+                    {
+                        ope[contador] = lblNumero1.Text + lblOperacion.Text + lblNumero2.Text + " = " + txtResultado.Text + " " + incorrecto;
+                        contador++;
+                        CantOperaciones++;
+                        MostrarResultados();
+                    }
+                if (CantOperaciones == 10)
+                {
+                    MostrarResultados();
+                    GpbResultado.Visible = true;
+                    MessageBox.Show("Termino el examen");
+                    return;
+                }
+                txtResultado.Text = "";
+                LLamar();
+            }           
+        }                
         private void label11_Click(object sender, EventArgs e)
         {
 
         }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
-
         private void lbl8_Click(object sender, EventArgs e)
         {
 
@@ -186,11 +178,8 @@ namespace JuegoNiñosPrimaria
             for (int i = 0; i < 10; i++)
             {
                 resultados[i].Text = ope[i];
-            }
-
-            GpbResultado.Visible = true;
+            }         
         }
-
         public void SelecOperacion()
         {
             if (vari == 1)
@@ -201,11 +190,6 @@ namespace JuegoNiñosPrimaria
                 Multiplicacion();
             if (vari == 4)
                 Division();
-        }
-
-        private void Prueba_Click(object sender, EventArgs e)
-        {
-            GpbResultado.Visible = false;
-        }
+        }       
     }
 }

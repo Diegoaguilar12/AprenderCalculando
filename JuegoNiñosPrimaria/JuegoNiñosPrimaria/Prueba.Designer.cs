@@ -456,7 +456,6 @@
             this.Name = "Prueba";
             this.Text = "Prueba";
             this.Load += new System.EventHandler(this.Prueba_Load);
-            this.Click += new System.EventHandler(this.Prueba_Click);
             ((System.ComponentModel.ISupportInitialize)(this.ptbMaestria)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

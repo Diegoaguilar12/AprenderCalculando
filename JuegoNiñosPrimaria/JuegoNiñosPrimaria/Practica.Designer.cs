@@ -45,7 +45,6 @@
             this.ptbMaestria = new System.Windows.Forms.PictureBox();
             this.ptbDown2 = new System.Windows.Forms.PictureBox();
             this.btnIgualar = new System.Windows.Forms.Button();
-            this.btnPrueba = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnNumMinNumMax = new System.Windows.Forms.Button();
@@ -235,17 +234,6 @@
             this.btnIgualar.UseVisualStyleBackColor = false;
             this.btnIgualar.Click += new System.EventHandler(this.btnIgualar_Click);
             // 
-            // btnPrueba
-            // 
-            this.btnPrueba.BackColor = System.Drawing.Color.SandyBrown;
-            this.btnPrueba.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.btnPrueba.Location = new System.Drawing.Point(482, 329);
-            this.btnPrueba.Name = "btnPrueba";
-            this.btnPrueba.Size = new System.Drawing.Size(120, 40);
-            this.btnPrueba.TabIndex = 19;
-            this.btnPrueba.Text = "Ayuda";
-            this.btnPrueba.UseVisualStyleBackColor = false;
-            // 
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.SandyBrown;
@@ -352,7 +340,7 @@
             // 
             this.btnRango.BackColor = System.Drawing.Color.SandyBrown;
             this.btnRango.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.btnRango.Location = new System.Drawing.Point(249, 329);
+            this.btnRango.Location = new System.Drawing.Point(482, 329);
             this.btnRango.Name = "btnRango";
             this.btnRango.Size = new System.Drawing.Size(120, 40);
             this.btnRango.TabIndex = 22;
@@ -370,7 +358,6 @@
             this.Controls.Add(this.btnRango);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnPrueba);
             this.Controls.Add(this.btnIgualar);
             this.Controls.Add(this.ptbDown2);
             this.Controls.Add(this.label1);
@@ -413,7 +400,6 @@
         private System.Windows.Forms.PictureBox ptbMaestria;
         private System.Windows.Forms.PictureBox ptbDown2;
         private System.Windows.Forms.Button btnIgualar;
-        private System.Windows.Forms.Button btnPrueba;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtBoxNumMaximo;
